@@ -1,0 +1,28 @@
+<?php
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Models\LabRequest;
+
+
+class HomeController extends Controller
+{
+  public function welcome()
+  {
+    $viewData = $this->loadViewData();
+    return view('welcome', $viewData);
+  }
+
+  public function index()
+  {
+    $viewData     = $this->loadViewData();
+    return view('admin.dashboard', $viewData);
+  }
+
+ 
+
+}
