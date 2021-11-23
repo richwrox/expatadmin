@@ -11,8 +11,8 @@
 	{
 
 		public function setBaseUrl(){
-	      $apiBaseUrl = 'http://127.0.0.1:8081';// \config('healthneutron.api_base_url');
-	      
+	      //$apiBaseUrl = 'http://127.0.0.1:8081';// \config('healthneutron.api_base_url');
+	      $apiBaseUrl = 'https://sandbox.healthneutron.com';
 	      return $apiBaseUrl;
 	    }
 
