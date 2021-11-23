@@ -26,7 +26,7 @@ class AddNewEmployee extends Component
     public $countryName;
     public $showPhoneValidationState = false;
 
-    //protected $listeners = ['account_created'=>'render'];
+    protected $listeners = ['account_created'=>'render'];
 
     public function render()
     {
