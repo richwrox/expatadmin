@@ -22,7 +22,7 @@ class DashboardStats extends Component
 
     public function labRequestWithBill() {
 	    $bill = Bill::where('partner_token','=',\Session::get('partnerToken'))->where('bill_type','lab')->first();
-	    if(count($bill) > 0){
+	    if(!empty($bill)){
 	    	return $bill->amount;
 	    }else{
 	    	return 0.00;
