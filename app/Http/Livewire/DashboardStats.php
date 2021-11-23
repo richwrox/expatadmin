@@ -25,7 +25,7 @@ class DashboardStats extends Component
 	    if(count($bill) > 0){
 	    	return $bill->amount;
 	    }else{
-	    	return 0.00
+	    	return 0.00;
 	    }
 	    
     }
