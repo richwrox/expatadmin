@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\DB;
 use App\Core\GlobalService;
 use Carbon\Carbon;
 use App\Models\User;
+use App\Models\Roles;
+use App\Models\ModelHasRoles;
 use App\Models\Transaction;
 
 trait GlobalService
@@ -64,6 +66,42 @@ trait GlobalService
             fclose($myfile);
 
         }
+
+
+
+
+    public function assignUserRole($userType,$modelId){
+        $modelRole = new ModelHasRoles;
+        $role = Roles::where('name',$userType)->first();
+        $modelRole->role_id    = $role->id;
+        $modelRole->model_type = 'App\Models\User';
+        $modelRole->model_id   = $modelId;  
+
+        $modelRole->save();      
+        // switch ($userType) {
+        //     case 'Farmer':
+
+
+        //         break;
+
+        //     case 'Seller':
+        //         # code...
+        //         break;
+
+
+        //     case 'Buyer':
+        //         # code...
+        //         break;
+
+            
+        //     default:
+        //         # code...
+        //         break;
+        // }
+    }
+
+
+
 
         public function myDates(){
             date_default_timezone_set("Africa/Accra");

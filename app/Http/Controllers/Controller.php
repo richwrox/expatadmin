@@ -22,11 +22,16 @@ class Controller extends BaseController
     }
 
     // Check for logged on user
-    if (session('userName'))
+    if (session('token'))
     {
-        $viewData['userName'] = session('userName');
-        $viewData['userEmail'] = session('userEmail');
-        $viewData['userTimeZone'] = session('userTimeZone');
+        $viewData['fullName'] = session('fullName');
+        $viewData['email']    = session('email');
+        $viewData['role']     = session('role');
+        $viewData['token']    = session('token');
+        $viewData['businessName'] = session('businessName');
+        $viewData['phone'] = session('phone');
+        $viewData['dob'] = session('dob');
+        $viewData['userType'] = session('userType');
     }
 
     return $viewData;

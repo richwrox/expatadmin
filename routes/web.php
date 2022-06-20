@@ -20,26 +20,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@welcome');
 
 
+Route::get('/run-artisan',  'AuthController@runartisa');
 
-Route::get('/signin', 'AuthController@signin');
-Route::get('/callback', 'AuthController@callback');
-Route::get('/signup', 'AuthController@create');
-
-
+Route::get('/dashboard',  'DashboardController@index');
+Route::get('/view-applicants',  'ApplicantController@index');
+Route::get('/user/accounts',    'AdminController@index');
 
 
 Route::middleware(['userAuth'])->group( function () {
 
- Route::get('/user/home',  'HomeController@index');
- Route::get('/user/list', 'EmployeeController@index');
- Route::get('/labs', 'LabController@index');
- Route::get('/labs/users', 'LabController@viewUserGroups');
 
- // Route::get('/leave/new', 'LeaveController@index');
- // Route::get('/calendar', 'CalendarController@calendar');
- // Route::get('/calendar/new', 'CalendarController@getNewEventForm');
- // Route::post('/calendar/new', 'CalendarController@createNewEvent');
- 
 
  Route::get('/signout', 'AuthController@signout');
 

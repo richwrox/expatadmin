@@ -123,6 +123,21 @@ class AuthController extends Controller
     return view('signup');
   }
 
+  public function showBuyerSignupForm(){
+    return view('buyer_signup');
+  }
+
+  public function showAdminSignUpForm(){
+
+    return view('admin_signup');
+  }
+
+  public function runartisa(){
+    /* php artisan cache:clear */
+    \Artisan::call('cache:clear');
+  }
+
+
   // public function checkAuthenticatedUser($user){
   // 	$nowWithTime = date('Y-m-d H:i:s');
   // 	if(User::where('userid', $user->getId())->exists()){

@@ -17,7 +17,7 @@ class UserAuthCheck
     public function handle(Request $request, Closure $next)
     {
           
-        if (\Session::get('userEmail') == null || \Session::get('userEmail') == null) {
+        if (\Session::get('token') == null || \Session::get('token') == null) {
             return redirect('/');
         }
         return $next($request);
