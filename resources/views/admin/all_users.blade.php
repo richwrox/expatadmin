@@ -14,38 +14,17 @@
     </div>
 
     <div class="table-responsive text-nowrap">
-    	<table class="table">
-                    <thead>
-                      <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Reg.Date</th>
-                        <th>Role</th>
-                        <th>Options</th>
-                      </tr>
-                    </thead>
-                    <tbody class="table-border-bottom-0">
-                    	
-                    	<tr>
-                    		<td>Mike White</td>
-                    		<td>test@mail.com</td>
-                    		<td>23-04-22</td>
-                    		<td>Admin</td>
-                    		<td>
-                    			<button>Edit</button>
-                    		</td>
-                    	</tr>
-                    
-
-                    </tbody>
-        </table>
+    	 @livewire('admin.all-user-accounts')
     </div>
 
+   <div>
+      @livewire('admin.create-admin-user')
+   </div>
+  
 
-   @livewire('admin.create-admin-user')
+   @livewire('admin.edit-user-account')
 
-
-
+    
 </div>
 
 @endsection

@@ -24,11 +24,11 @@ Route::get('/run-artisan',  'AuthController@runartisa');
 
 Route::get('/dashboard',  'DashboardController@index');
 Route::get('/view-applicants',  'ApplicantController@index');
-Route::get('/user/accounts',    'AdminController@index');
+Route::get('/accounts',    'AdminController@index');
+Route::get('/view-filings/32443',    'FilingController@index');
 
 
 Route::middleware(['userAuth'])->group( function () {
-
 
 
  Route::get('/signout', 'AuthController@signout');

@@ -40,7 +40,7 @@
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="{{ asset('../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
-
+    @livewireStyles
     <!-- Page CSS -->
 
     <!-- Helpers -->
@@ -166,11 +166,11 @@
                   </a>
                 </li>
 
-                <li class="menu-item">
+                <!-- <li class="menu-item">
                   <a href="pages-account-settings-notifications.html" class="menu-link">
                     <div data-i18n="Notifications">Forms</div>
                   </a>
-                </li>
+                </li> -->
 
                
               </ul>
@@ -187,8 +187,8 @@
             </li> -->
 
             <!-- Forms & Tables -->
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Forms </span></li>
-            <!-- Forms -->
+            <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Forms </span></li>
+            
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-detail"></i>
@@ -206,7 +206,7 @@
                   </a>
                 </li>
               </ul>
-            </li>
+            </li> -->
 
              <li class="menu-header small text-uppercase"><span class="menu-header-text">Back Office </span></li>
             <!-- Forms -->
@@ -223,7 +223,7 @@
                 </li>
 
                 <li class="menu-item">
-                  <a href="/user/accounts" class="menu-link">
+                  <a href="/accounts" class="menu-link">
                     <div data-i18n="Basic Inputs">Accounts</div>
                   </a>
                 </li>
@@ -424,5 +424,9 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    @livewireScripts
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

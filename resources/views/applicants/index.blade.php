@@ -15,7 +15,8 @@
                         <th>Name</th>
                         <th>Email</th>
                         <th>Reg. Date</th>
-                        <th>Options</th>
+                        <th>Filings</th>
+                        <!-- <th>Options</th> -->
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
@@ -24,9 +25,12 @@
                     		<td>{{ $data->name }}</td>
                     		<td>{{ $data->email }}</td>
                     		<td>{{ $data->created_at }}</td>
-                    		<td>
-                    			<button>Edit</button>
-                    		</td>
+                        <td>
+                          <a href="/view-filings/32443">View</a>
+                        </td>
+                    		<!-- <td>
+                    			<button>Vie</button>
+                    		</td> -->
                     	</tr>
                     	@endforeach
 
