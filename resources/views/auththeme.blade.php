@@ -6,26 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="csrf-token" content="{{ csrf_token() }}">
 <!--===============================================================================================-->  
-  <link rel="icon" type="image/png" href="authassets/images/icons/favicon.ico"/>
+  <link rel="icon" type="image/png" href="{{ asset('authassets/images/icons/favicon.ico') }}"/>
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="authassets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ asset('authassets/vendor/bootstrap/css/bootstrap.min.css') }}">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="authassets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ asset('authassets/fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="authassets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ asset('authassets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css') }}">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="authassets/vendor/animate/animate.css">
+  <link rel="stylesheet" type="text/css" href="{{ asset('authassets/vendor/animate/animate.css') }}">
 <!--===============================================================================================-->  
-  <link rel="stylesheet" type="text/css" href="authassets/vendor/css-hamburgers/hamburgers.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ asset('authassets/vendor/css-hamburgers/hamburgers.min.css') }}">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="authassets/vendor/animsition/css/animsition.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ asset('authassets/vendor/animsition/css/animsition.min.css') }}">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="authassets/vendor/select2/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ asset('authassets/vendor/select2/select2.min.css') }}">
 <!--===============================================================================================-->  
-  <link rel="stylesheet" type="text/css" href="authassets/vendor/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" type="text/css" href="{{ asset('authassets/vendor/daterangepicker/daterangepicker.css') }}">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="authassets/css/util.css">
-  <link rel="stylesheet" type="text/css" href="authassets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="{{ asset('authassets/css/util.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('authassets/css/main.css') }}">
   <link rel="shortcut icon" href="{{ asset('../../../assets/images/favi.png') }}" />
 
   <!-- Layout styles -->  
